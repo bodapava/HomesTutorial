@@ -7,8 +7,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavBarComponent {
   @Output() searchEvent = new EventEmitter();
+
   sendValues(e: any) {
     console.log('navbar', e.target.value);
     this.searchEvent.emit(e.target.value);
+  }
+
+  sendValuesClick(e: Event) {
+    e.preventDefault();
+    console.log(e);
   }
 }

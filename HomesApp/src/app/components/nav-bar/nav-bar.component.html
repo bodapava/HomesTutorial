@@ -28,7 +28,13 @@
         style="width: 100vh"
         (keyup)="sendValues($event)"
       />
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button
+        class="btn btn-outline-success"
+        type="submit"
+        (click)="sendValuesClick($event)"
+      >
+        Search
+      </button>
     </form>
   </div>
 </nav>
