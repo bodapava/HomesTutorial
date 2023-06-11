@@ -1,1 +1,2 @@
-<app-nav-bar></app-nav-bar> <app-houses></app-houses>
+<app-nav-bar (searchEvent)="captureSearch($event)"></app-nav-bar>
+<app-houses [location]="location"></app-houses>
