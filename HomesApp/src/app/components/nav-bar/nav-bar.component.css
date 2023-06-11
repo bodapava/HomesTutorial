@@ -1,0 +1,7 @@
+.btn-outline-success {
+  margin-left: 10px;
+  --bs-btn-border-color: purple;
+  --bs-btn-color: purple;
+  --bs-btn-hover-bg: purple;
+  --bs-btn-hover-border-color: purple;
+}

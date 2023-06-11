@@ -1,0 +1,10 @@
+<div class="container mt-3">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" *ngFor="let house of houseList; let i = index">
+        <app-housecard [house]="house"></app-housecard>
+        <div *ngIf="(i + 1) % 2 === 2" class="w-100"></div>
+      </div>
+    </div>
+  </div>
+</div>
