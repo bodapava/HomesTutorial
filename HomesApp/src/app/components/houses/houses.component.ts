@@ -18,7 +18,7 @@ export class HousesComponent implements OnChanges {
     // this.filteredListVal();
   }
   ngOnChanges(changes: SimpleChanges) {
-    console.log('houses', changes);
+    console.log('houses', changes, this.location);
     this.filteredListVal(this.location);
   }
 
